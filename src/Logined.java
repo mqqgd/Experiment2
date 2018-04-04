@@ -26,6 +26,7 @@ public class Logined {
 		return false;
 	}
 	
+
 	public int getScore(String name){
 		return result;
 	}

@@ -28,13 +28,13 @@ public class Login extends JFrame{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	private void init(){
+		user=new JTextField(20);
+		pass=new JPasswordField(20);
+		passJP=new JPanel();
+		buttonJP=new JPanel();
 		userLb=new JLabel("ÓÃ»§");
 		passLb=new JLabel("ÃÜÂë");
 		userJP=new JPanel();
-		passJP=new JPanel();
-		buttonJP=new JPanel();
-		user=new JTextField(20);
-		pass=new JPasswordField(20);
 		ok=new JButton("µÇÂ½");
 		quit=new JButton("ÍË³ö");
 	}
@@ -57,6 +57,7 @@ public class Login extends JFrame{
 	
 	private void actionListen(){
 		ok.addActionListener(new ActionListener() {
+			
 			
 			@SuppressWarnings("deprecation")
 			@Override

@@ -21,10 +21,12 @@ public class LinkSql {
             e.printStackTrace();  
         }  
     }  
+	
 	public void changeMySqlDate(String sql) {
 		try {
 			pst=conn.prepareStatement(sql);
 			pst.executeUpdate();
+			System.out.println("接收到修改数据库命令"+sql);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block 
 			e.printStackTrace();
@@ -32,6 +34,7 @@ public class LinkSql {
 	}
 	public ResultSet selectSqlDate(String sql) {
 		try {
+			System.out.println("接收到查询数据库命令"+sql);
 			pst=conn.prepareStatement(sql);
 			ret = pst.executeQuery();
 			return ret;

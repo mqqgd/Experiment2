@@ -10,6 +10,8 @@ public class Tongji extends JFrame{
 		this.result=result;
 		setFrame();
 	}
+	
+	//µÇÂ½½çÃæ
 	private void setFrame(){
 		System.out.println(time);
 		pic=new PieChart(result,time);
