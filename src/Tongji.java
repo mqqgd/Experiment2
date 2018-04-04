@@ -15,7 +15,7 @@ public class Tongji extends JFrame{
 	private void setFrame(){
 		System.out.println(time);
 		pic=new PieChart(result,time);
-		this.setTitle("欢迎登陆");
+		this.setTitle("您最终的得分统计");
 		this.setSize(600,400);
 		this.setLocationRelativeTo(null);
 		this.setResizable(false);
